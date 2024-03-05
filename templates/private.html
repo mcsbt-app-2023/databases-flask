@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+
+{% block title %}Private | paymepal{% endblock %}
+
+{% block main %}
+    <ul>
+        {% for transaction in transactions %}
+            <li>{{transaction[2]}} {{transaction[3]}} {{transaction[7]}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
